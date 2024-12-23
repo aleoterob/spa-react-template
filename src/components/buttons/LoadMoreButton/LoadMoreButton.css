@@ -1,0 +1,16 @@
+.load-more-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 16px 0;
+}
+
+.load-more-button:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}

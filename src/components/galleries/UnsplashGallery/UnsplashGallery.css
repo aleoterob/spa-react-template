@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden; /* Sin scroll en el contenedor principal */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding-top: 90px;
+  /* height: auto; */
+  background-color: white;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  width: 100%;
+  height: 64%; /* El contenedor ocupa todo el alto disponible */
+  overflow-y: auto; /* Activa scroll vertical */
+  overflow-x: hidden; /* Desactiva el scroll horizontal */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.gallery::-webkit-scrollbar {
+  width: 8px; /* Tamaño de la barra de scroll */
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Color del scroll */
+  border-radius: 4px;
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa; /* Color del scroll al pasar el mouse */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  height: 470px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 250px; /* Todas las imágenes tienen la misma altura */
+  object-fit: cover; /* Asegura que la imagen se adapte bien al espacio */
+  border-radius: 8px;
+  min-height: 250px;
+}
+
+.card-details {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.card-details p {
+  margin: 8px 0;
+}
+
+.card-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-details a:hover {
+  text-decoration: underline;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px; /* Altura fija para todas las imágenes */
+  object-fit: cover;
+}
+
+h2 {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
