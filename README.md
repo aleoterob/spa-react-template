@@ -1,1 +1,1 @@
-# Simple React Template 
+# Simple SPA React Template 
