@@ -2,7 +2,7 @@ import React from "react";
 import "./Maps.css";
 
 const Maps: React.FC = () => {
-  const apiKey = "AIzaSyB3o-DNB4eq6Or-irj1aV7I3y7cQ3RShac"; // Sustituye esto con tu clave de API
+  const apiKey = "API_KEY";
   const cities = [
     { name: "La Coruña", coordinates: "43.3623,-8.4115" },
     { name: "Buenos Aires", coordinates: "-34.6037,-58.3816" },
